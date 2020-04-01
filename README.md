@@ -11,7 +11,7 @@ CS50 Web Programming with Python and JavaScript Edx
 6. Choose the “Hobby Dev - Free” plan, which will give you access to a free PostgreSQL database that will support up to 10,000 rows of data. Click “Provision.”
 7. Now, click the “Heroku Postgres :: Database” link.
 8. You should now be on your database’s overview page. Click on “Settings”, and then “View Credentials.” This is the information you’ll need to log into your database.
-9. ou can access the database via [Adminer](https://adminer.cs50.net/), filling in the server (the “Host” in the credentials list), your username (the “User”), your password, and the name of the database, all of which you can find on the Heroku credentials page.
+9. You can access the database via [Adminer](https://adminer.cs50.net/), filling in the server (the “Host” in the credentials list), your username (the “User”), your password, and the name of the database, all of which you can find on the Heroku credentials page.
 
 ## :gear: Note before run the code (I use Ubuntu Os with Window use "set" instead)
 ```bash
