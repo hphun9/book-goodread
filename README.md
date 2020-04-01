@@ -15,6 +15,8 @@ CS50 Web Programming with Python and JavaScript Edx
 
 ## :gear: Note before run the code (I use Ubuntu Os with Window use "set" instead)
 ```bash
+$ pip3 install -r requiment.txt
+
 $ python3 -m venv myvirtualenv
 
 # Activate the virtualenv
