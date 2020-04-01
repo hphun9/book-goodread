@@ -22,7 +22,7 @@ $ export GOODREADS_KEY=GoodReadAPIKey.
 <img src = "demo/02.png">
 <img src = "demo/03.png">
 <img src = "demo/04.png">
-# Database on Heroku (Adminer base on CS50 of HarvardX on EDX, If you like, Please Register and learn on EDX)
+*** Database on Heroku (Adminer base on CS50 of HarvardX on EDX, If you like, Please Register and learn on EDX)***
 1. Navigate to https://www.heroku.com/, and create an account if you don’t already have one.
 2. On Heroku’s Dashboard, click “New” and choose “Create new app.”
 3. Give your app a name, and click “Create app.” 
