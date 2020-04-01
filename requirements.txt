@@ -1,0 +1,16 @@
+chardet
+Click
+Flask
+Flask-Session
+idna
+itsdangerous
+Jinja2
+MarkupSafe
+requests
+SQLAlchemy
+urllib3
+Werkzeug == 0.16.0
+
+# Heroku
+psycopg2-binary
+gunicorn

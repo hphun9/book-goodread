@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project 1: {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Head start-->
+    <div class="jumbotron text-center" style="margin-bottom:0; background: url(https://images2.alphacoders.com/923/thumb-1920-923643.png) no-repeat;">
+      <h1>Books</h1>
+      <p>The world in your hand</p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border">
+      <a class="navbar-brand" style="color:gr">
+        <a class="navbar-item" href="{{ url_for('index') }}"">
+          <img src="data:image/png;base64,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" alt="logo"
+               width="50" height="50">
+        </a>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNavDropdown">
+          {% if session.user_id %}
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link" href="/">Search</a></li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="#">{{ session.user_name }}</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+              </ul>
+          {% else %}
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>                
+                  <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+              </ul>
+          {% endif %}
+      </div>
+  </nav>
+    <!-- end Head -->
+
+    <!-- main start -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="notification">
+            <button class="delete"></button>
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <main class="container p-5" style="background: honeydew;">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <!-- main end -->
+    <script>
+      (function () {
+        let noti = document.getElementsByClassName('notification')[0];
+        let notiDel = document.getElementsByClassName('delete');
+        if (notiDel.length > 0) {
+            notiDel[0].addEventListener('click', () => {
+                noti.remove();
+            }, false)
+        }
+      })();
+      (function (){
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        if($navbarBurgers.length > 0){
+          $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+          });
+        }
+      })
+    </script>
+  </body>
+</html>
