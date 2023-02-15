@@ -9,7 +9,7 @@ MarkupSafe
 requests
 SQLAlchemy
 urllib3
-Werkzeug == 0.16.0
+Werkzeug == 2.2.3
 
 # Heroku
 psycopg2-binary
